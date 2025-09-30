@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Segurança da Informação no Dia a Dia</title>
+    <style>
+        /* Variáveis de cores */
+        :root{
+            --bg: #ffffff;
+            --text: #111827;
+            --muted: #4b5563;
+            --blue: #1d4ed8;
+            --red: #ef4444;
+            --yellow: #f59e0b;
+            --green: #10b981;
+            --container-max: 900px;
+        }
+
+        /* Reset simples */
+        *{box-sizing: border-box;margin:0;padding:0}
+        html,body{height:100%}
+
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background: var(--bg);
+            color: var(--text);
+            line-height:1.5;
+            -webkit-font-smoothing:antialiased;
+            -moz-osx-font-smoothing:grayscale;
+            padding:2rem 1rem;
+            display:flex;
+            justify-content:center;
+        }
+
+        .wrap{
+            width:100%;
+            max-width:var(--container-max);
+        }
+
+        header{
+            text-align:center;
+            margin-bottom:1.25rem;
+        }
+
+        /* Logo estilo "Google" com letras coloridas */
+        .logo{
+            display:inline-flex;
+            gap:0.25rem;
+            align-items:center;
+            font-weight:700;
+            font-size:2.25rem;
+            letter-spacing:0.02em;
+            margin-bottom:0.5rem;
+        }
+        .logo .letter{display:inline-block}
+        .logo .blue{color:var(--blue)}
+        .logo .red{color:var(--red)}
+        .logo .yellow{color:var(--yellow)}
+        .logo .green{color:var(--green)}
+
+        h1,h2,h3{margin-bottom:0.5rem}
+
+        h2.section-title{
+            font-size:1.25rem;
+            margin-top:1.25rem;
+        }
+
+        /* Cores por tipo de pergunta */
+        .q-blue{color:var(--blue)}
+        .q-red{color:var(--red)}
+        .q-yellow{color:var(--yellow)}
+        .q-green{color:var(--green)}
+
+        /* Blocos com texto explicativo */
+        .card{
+            background: #ffffff;
+            border-radius:8px;
+            padding:1rem;
+            margin:0.5rem 0 0.75rem;
+            box-shadow: 0 1px 6px rgba(0,0,0,0.06);
+            text-align:left;
+        }
+
+        .muted{
+            color:var(--muted);
+        }
+
+        /* Lista de riscos formatada */
+        .risks{display:grid;gap:0.5rem;margin-top:0.25rem}
+        .risk{padding:0.6rem;border-radius:6px;background:#fbfbfb}
+
+        /* Dicas */
+        .tips{margin-top:0.5rem}
+        .tips p{margin-bottom:0.5rem}
+
+        /* Responsividade simples */
+        @media (max-width:520px){
+            .logo{font-size:1.75rem}
+            :root{--container-max:720px}
+        }
+    </style>
+</head>
+<body>
+<div class="wrap">
+    <header>
+        <div class="logo" aria-hidden="true">
+            <span class="letter blue">G</span>
+            <span class="letter red">O</span>
+            <span class="letter yellow">O</span>
+            <span class="letter blue">G</span>
+            <span class="letter green">L</span>
+            <span class="letter red">E</span>
+        </div>
+        <h1 class="muted">Segurança da Informação no Dia a Dia</h1>
+        <h2 style="margin-top:.5rem">Segurança do APP</h2>
+    </header>
+
+    <main>
+        <section aria-labelledby="q1">
+            <h2 id="q1" class="section-title q-blue">1. Que dados esse app coleta?</h2>
+            <div class="card">
+                <h3 class="muted">Resumo</h3>
+                <p>O Google coleta uma vasta gama de dados para fornecer seus serviços, que incluem informações pessoais associadas à sua Conta Google, dados de uso dos serviços (como histórico de pesquisa e navegação, vídeos assistidos e locais visitados) e informações do dispositivo e conexão (como tipo e modelo de dispositivo, sistema operacional e tipo de rede móvel). Esses dados são usados para personalizar a experiência do usuário, entregar anúncios mais relevantes e melhorar os serviços.</p>
+            </div>
+        </section>
+
+        <section aria-labelledby="q2">
+            <h2 id="q2" class="section-title q-red">2. Pra que serve?</h2>
+            <div class="card">
+                <p>A coleta de dados pelo Google serve para melhorar e fornecer os seus serviços, desenvolver novos, oferecer conteúdo e anúncios personalizados, avaliar o desempenho, e proteger os usuários e o próprio Google.</p>
+            </div>
+        </section>
+
+        <section aria-labelledby="q3">
+            <h2 id="q3" class="section-title q-yellow">3. Quais riscos se houver vazamento?</h2>
+            <div class="card risks">
+                <div class="risk"><strong>Prejuízos Financeiros:</strong> Os dados vazados podem ser usados para realizar compras indevidas, solicitar cartões de crédito ou empréstimos, e realizar movimentações financeiras fraudulentas em nome da vítima.</div>
+                <div class="risk"><strong>Roubo de Identidade:</strong> Informações como CPF, endereço e dados bancários podem ser utilizadas para criar contas falsas, abrir empresas ou se inscrever em partidos políticos sem o consentimento do titular.</div>
+                <div class="risk"><strong>Dança à Reputação:</strong> A exposição de informações pessoais e o uso indevido delas podem afetar a reputação de uma pessoa na vida online.</div>
+                <div class="risk"><strong>Ataques de Phishing e SPAM:</strong> Dados vazados facilitam a aplicação de golpes, como ataques de phishing, que visam enganar as pessoas para obter mais informações ou dinheiro, e o envio de SPAM direcionado.</div>
+                <div class="risk"><strong>Acesso a Outras Contas:</strong> Credenciais comprometidas podem ser usadas para tentar acessar outras contas de e-mail, redes sociais ou serviços bancários, caso o usuário reutilize senhas.</div>
+            </div>
+        </section>
+
+        <section aria-labelledby="q4">
+            <h2 id="q4" class="section-title q-blue">4. Como poderiam melhorar a segurança?</h2>
+            <div class="card">
+                <p>O Google pode melhorar sua segurança ao aprimorar sua infraestrutura, usando IA e hardware mais avançados para combater ameaças. Aprimorar a proteção das contas dos usuários, facilitando a verificação em duas etapas e a gestão de senhas. Fortalecer o Programa Proteção Avançada para usuários de alto risco. Intensificar a educação dos usuários sobre segurança digital e a proteção contra phishing. Inovar em áreas como criptografia pós-quântica e segurança de dados na nuvem.</p>
+            </div>
+        </section>
+
+        <section aria-labelledby="tips">
+            <h2 id="tips" class="section-title q-green">Dicas de Segurança</h2>
+            <div class="card tips">
+                <p>Para melhorar a segurança, o Google pode continuar a aprimorar suas defesas de infraestrutura com IA e hardware mais avançado. Além disso, a empresa pode expandir o Programa Proteção Avançada para usuários de alto risco e simplificar a gestão de senhas e a verificação em duas etapas para todos.</p>
+                <p>Outro ponto é intensificar a educação digital e tornar os alertas de segurança mais claros e visíveis para incentivar ações imediatas dos usuários.</p>
+            </div>
+        </section>
+    </main>
+
+</div>
+</body>
+</html>

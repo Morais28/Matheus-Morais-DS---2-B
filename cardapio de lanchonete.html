@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Cardápio da Lanchonete</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #fce4ec;
+      margin: 0;
+      padding: 20px;
+    }
+
+    h1 {
+      text-align: center;
+      color: #ee0909;
+    }
+
+    .cardapio {
+      max-width: 700px;
+      margin: auto;
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    .secao {
+      margin-bottom: 30px;
+    }
+
+    .secao h2 {
+      color: #e90f0f;
+      border-bottom: 1px solid #ccc;
+      padding-bottom: 5px;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    li {
+      padding: 8px 0;
+      border-bottom: 1px dashed #ddd;
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .preco {
+      color: #388e3c;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>🍟 Cardápio da Lanchonete</h1>
+
+  <div class="cardapio">
+    <div class="secao">
+      <h2>🍔 Lanches</h2>
+      <ul>
+        <li>Hambúrguer Simples <span class="preco">R$ 12,00</span></li>
+        <li>Cheeseburguer <span class="preco">R$ 14,00</span></li>
+        <li>X-Bacon <span class="preco">R$ 18,00</span></li>
+        <li>X-Tudo <span class="preco">R$ 22,00</span></li>
+      </ul>
+    </div>
+
+    <div class="secao">
+      <h2>🥤 Bebidas</h2>
+      <ul>
+        <li>Refrigerante Lata <span class="preco">R$ 6,00</span></li>
+        <li>Suco Natural <span class="preco">R$ 8,00</span></li>
+        <li>Água Mineral <span class="preco">R$ 3,00</span></li>
+      </ul>
+    </div>
+
+    <div class="secao">
+      <h2>🍰 Sobremesas</h2>
+      <ul>
+        <li>Pudim <span class="preco">R$ 7,00</span></li>
+        <li>Bolo de Chocolate <span class="preco">R$ 6,00</span></li>
+        <li>Sorvete 2 bolas <span class="preco">R$ 9,00</span></li>
+      </ul>
+    </div>
+  </div>
+
+</body>
+</html>

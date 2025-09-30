@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Cardápio da Lanchonete</title>
+  <style>
+    body {
+      background-color: #add8e6; /* azul claro */
+      font-family: Arial, sans-serif;
+      text-align: center; /* centraliza o conteúdo */
+    }
+
+    ul {
+      list-style-type: none; /* remove os marcadores das listas */
+      padding: 0;
+    }
+
+    li {
+      margin: 5px 0;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Cardápio da Lanchonete</h1>
+
+  <h2>Lanches</h2>
+  <ul>
+    <li>Hambúrguer - R$ 10,00</li>
+    <li>Cheeseburguer - R$ 12,00</li>
+    <li>X-Salada - R$ 13,00</li>
+    <li>X-Bacon - R$ 15,00</li>
+  </ul>
+
+  <h2>Bebidas</h2>
+  <ul>
+    <li>Refrigerante - R$ 5,00</li>
+    <li>Suco - R$ 6,00</li>
+    <li>Água - R$ 3,00</li>
+  </ul>
+
+  <h2>Sobremesas</h2>
+  <ul>
+    <li>Pudim - R$ 6,00</li>
+    <li>Bolo - R$ 5,00</li>
+    <li>Sorvete - R$ 7,00</li>
+  </ul>
+
+</body>
+</html>
